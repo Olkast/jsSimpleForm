@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<div class="successMessage"></div>
+<div class="formContainer">
+    <form class="form">
+        <div class="fieldInput">
+            <label>
+                <span class="nameLabel">Имя*</span>
+                <input class="input required" id="name" type="text" placeholder="Иван"/>
+            </label>
+            <div class="error">
+                <p></p>
+            </div>
+        </div>
+        <div class="fieldInput">
+            <label>
+                <span class="nameLabel">E-mail*</span>
+                <input class="input required email" id="email" type="email" placeholder="Admin@mail.ru"/>
+            </label>
+            <div class="error">
+                <p></p>
+            </div>
+        </div>
+        <div class="fieldInput">
+            <label>
+                <span class="nameLabel">Телефон *</span>
+                <input class="input required" id="tel" type="tel" placeholder="+375-44-757-89-78"/>
+            </label>
+            <div class="error">
+                <p></p>
+            </div>
+        </div>
+        <div class="fieldInput">
+            <label>
+                <span class="nameLabel">Сообщение*</span>
+                <textarea class="input required" id="text" placeholder="text"></textarea>
+            </label>
+            <div class="error">
+                <p></p>
+            </div>
+        </div>
+    </form>
+    <div class="buttons">
+        <button onClick="submit()" class="submitButton">Отправить</button>
+        <button class="button">Подробности</button>
+    </div>
+</div>
+<div class="modalContainer">
+    <div class="modal">
+        <p class="modalText">Все поля должны быть заполнены!</p>
+        <div class="close">&#10006</div>
+    </div>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>

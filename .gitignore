@@ -1,0 +1,7 @@
+dist/
+node_modules
+*.swp
+.idea/
+.vs/
+.vscode/
+.DS_Store
